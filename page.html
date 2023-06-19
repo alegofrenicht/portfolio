@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfd38c655d.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <video autoplay muted loop>
+                    <source src="images/glow.mp4" class="logo">
+                </video>
+                <ul id="side_menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>I'm Alexander Replyansky</h1>
+            </div>
+        </div>
+    </div>
+
+<!--    ABOUT     -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img alt="portrait" src="images/about_photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="summary">I am a full-stack developer with specialization in Python, equipped with a comprehensive skill set and a strong problem-solving ability. With expertise in both front-end and back-end development, I create intuitive user interfaces and develop robust solutions. Experienced in database management, I ensure efficient data handling. Attention to detail, a collaborative mindset, and a dedication to delivering high-quality code define my work. I am passionate about creating exceptional web experiences and contributing to innovative projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages and Web Technologies</span><br><br>Python &nbsp|&nbsp JavaScript &nbsp|&nbsp HTML5 &nbsp|&nbsp CSS3</li>
+                            <li><span>Web Frameworks and Libraries</span><br><br>Django &nbsp|&nbsp Flask</li>
+                            <li><span>Software Development Concepts and Tools</span><br><br>Object-Oriented Programming &nbsp|&nbsp SQL &nbsp|&nbsp Git &nbsp|&nbsp GitHub</li>
+                            <li><span>Deployment Platforms</span><br><br>Heroku &nbsp|&nbsp AWS &nbsp|&nbsp Render</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>February 2023 - Current</span><br><br>Service Representative at Bynet Semech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Developers.Institute, Tel Aviv</span><br><br>Full Stack development</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--    SERVICES     -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-globe fas-fw"></i>
+                    <h2>Web Development</h2>
+                    <p>Offering web development services with expertise in Python (Django, Flask), JavaScript, HTML5, and CSS3. Specializing in creating responsive and visually appealing websites tailored to meet your specific needs.</p>
+                </div>
+                <div>
+                    <i class="fas fa-bug fas-fw"></i>
+                    <h2>Bug Fixing and Troubleshooting</h2>
+                    <p>Providing bug fixing and troubleshooting services to identify and resolve issues within web applications. Meticulous approach to debugging, ensuring smooth and error-free functioning of websites and web applications.</p>
+                </div>
+                <div>
+                    <i class="fas fa-cogs fas-fw"></i>
+                    <h2>Website Optimization and Performance Enhancement</h2>
+                    <p>Analyzing and optimizing website performance to improve loading speed, responsiveness, and user experience. Implementing strategies to enhance overall website performance and optimize code.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<!--    PROJECTS     -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="horizontal">
+                    <div class="work">
+                        <img alt="app_one pic" src="images/app_one.jpg">
+                        <div class="layer">
+                            <h3>Movie Recommendation System</h3>
+                            <p><i class="fas fa-square-check"></i>This project is a movie recommendation system implemented using Flask, Postgresql, Bootstrap and Pandas library for compiling statistics.<br><br><i class="fas fa-square-check"></i>It allows users to sign in, register, and create their watchlist of movies.<br><br><i class="fas fa-square-check"></i>The system generates movie recommendations based on the user's watchlist and provides statistical insights on user preferences.</p>
+                            <a href="https://almovie-app.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                     <div class="work">
+                         <img alt="app_three pic" src="images/app_three.jpg">
+                         <div class="layer">
+                            <h3>Sponge Bob Game</h3>
+                            <p>Key Features:<br><br>
+                                <i class="fas fa-circle"></i>HTML, CSS, and JavaScript are used to develop the game.<br><br>
+                                <i class="fas fa-circle"></i>Dynamic event handling ensures an interactive gameplay experience.<br><br>
+                                <i class="fas fa-circle"></i>DOM manipulation is employed for seamless gameplay.</p>
+                            <a href="https://alegofrenicht.github.io/HACKATHON-1/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                     </div>
+                </div>
+                <div class="vertical">
+                    <div class="work">
+                        <img alt="app_two pic" src="images/app_two.jpg">
+                        <div class="layer">
+                            <h3>Telegram Bot Shop</h3>
+                            <p>Telegram Bot Shop is a marketplace bot built with Python, Postgresql and the Telegram Bot API.<br><br>
+                                It allows users to:<br><br>
+                                <i class="fas fa-circle"></i>place items for rent or sale;<br><br>
+                                <i class="fas fa-circle"></i>browse and rent equipment;<br><br>
+                                <i class="fas fa-circle"></i>make purchases within the Telegram platform.</p>
+                            <a href="https://github.com/alegofrenicht/TelegramBotShop" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    CONTACT     -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>alexander9replyansky@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/alegofrenicht" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alexander-replyansky/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Alexander_Replyansky_CV_Python.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <label>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </label>
+                        <label>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </label>
+                        <label>
+                            <textarea  name="Message" rows="6" placeholder="Your message"></textarea>
+                        </label>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg">Message sent successfully</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © A.Replyansky</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
