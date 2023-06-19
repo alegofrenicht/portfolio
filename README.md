@@ -26,5 +26,5 @@ The portfolio app is built using a combination of technologies, including but no
 
 ## Deployment
 
-The portfolio app is deployed and hosted at [deployment URL]. Feel free to visit the live version and explore its various features.
+The portfolio app is deployed and hosted at [https://alegofrenicht.github.io/portfolio/]. Feel free to visit the live version and explore its various features.
 
