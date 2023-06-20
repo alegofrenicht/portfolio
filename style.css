@@ -454,6 +454,7 @@ nav .fas {
     display: none;
 }
 
+
 @media only screen and (max-width: 600px){
 
     nav ul li a {
@@ -548,3 +549,76 @@ nav .fas {
     }
 }
 
+@media only screen and (max-width: 450px){
+
+    .sub-title {
+        font-size: 3.5rem;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    .header-text {
+        margin-top: 170%;
+        font-size: 3vh;
+    }
+
+    .header-text h1 {
+        margin-top: 2vh;
+        font-size: 5vh;
+    }
+
+    .row p {
+        font-size: 1.2rem;
+    }
+
+    #about li span{
+        font-size: 2rem;
+    }
+
+    #about li {
+        font-size: 1.5rem;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(35vh, 1fr));
+    }
+
+    .services-list p {
+        font-size: 1.2rem;
+    }
+
+    /*.work-list {*/
+    /*margin-top: 3vh;*/
+    /*display: flex;*/
+    /*justify-content: space-evenly ;*/
+    /*flex-wrap: wrap;*/
+    /*}*/
+
+    .work img {
+        height: 50vh;
+    }
+
+    .horizontal {
+        flex-basis: 100%;
+    }
+
+    .vertical {
+        flex-basis: 100%;
+    }
+
+    .work {
+        margin-top: 100%;
+    }
+
+    .layer p {
+        font-size: 1rem;
+    }
+
+    .horizontal .work #proj_one p {
+        font-size: 0.8rem;
+    }
+
+
+}
