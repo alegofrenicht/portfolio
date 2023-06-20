@@ -589,13 +589,6 @@ nav .fas {
         font-size: 1.2rem;
     }
 
-    /*.work-list {*/
-    /*margin-top: 3vh;*/
-    /*display: flex;*/
-    /*justify-content: space-evenly ;*/
-    /*flex-wrap: wrap;*/
-    /*}*/
-
     .work img {
         height: 50vh;
     }
@@ -613,12 +606,28 @@ nav .fas {
     }
 
     .layer p {
+        font-size: 1.3rem;
+    }
+
+    .horizontal .work #proj_two p {
+        font-size: 1rem;
+    }
+
+    }
+    .horizontal .work #proj_one p {
+        font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 400px){
+    .layer p {
         font-size: 1rem;
     }
 
     .horizontal .work #proj_one p {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
     }
 
-
+    .horizontal .work #proj_two p {
+        font-size: 0.9rem;
+    }
 }
