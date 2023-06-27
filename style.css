@@ -132,7 +132,7 @@ nav ul li a:hover::after {
 .about-col-2 p {
     font-size: 3vh;
     margin-top: 6vh;
-    color: #b2b0b0;
+    color: #494848;
 }
 
 .about-col-2 p span {
@@ -170,7 +170,7 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 3vh 0;
-    color: #b2b0b0;
+    color: #3f3d3d;
 }
 
 .tab-contents ul li span {
@@ -300,6 +300,7 @@ nav ul li a:hover::after {
 }
 .layer p {
     margin-top: 2vh;
+    font-size: 1.1rem;
     font-weight: 200;
 }
 
@@ -342,6 +343,12 @@ nav ul li a:hover::after {
 .work:hover .layer {
     height: 100%;
 }
+
+#proj_one p{
+    font-size: 2rem;
+}
+
+
 
 /*-------CONTACT-------*/
 
@@ -437,7 +444,7 @@ form button:hover {
     width: 100%;
     text-align: center;
     padding: 2vh 0;
-    background: #3f3e3e;
+    background: #000000;
     font-weight: 300;
     margin-top: 6vh;
 }
@@ -616,7 +623,7 @@ nav .fas {
     }
     .horizontal .work #proj_one p {
         font-size: 0.8rem;
-}
+    }
 
 @media only screen and (max-width: 400px){
     .layer p {
